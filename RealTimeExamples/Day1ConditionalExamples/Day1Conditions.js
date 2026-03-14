@@ -82,3 +82,79 @@ function checkReturn(daysAfterDelivery) {
 // checkReturn(-1)
 
 //6. Cart Item Limit
+
+const cartitems = 6;
+function checkCartItemsLimit(cartitems) {
+  if (cartitems > 0 && cartitems < 10) {
+    console.log("Added to Cart successfully");
+  } else {
+    console.log("Cart Items Reached Limit");
+  }
+}
+
+// checkCartItemsLimit(cartitems);
+// checkCartItemsLimit(20)
+
+// 7.WishList Items Limit Check
+
+const wishListItems = 16;
+function checkWishListLimit(wishListItems) {
+  if (wishListItems > 0 && wishListItems <= 30) {
+    console.log("Items added to wishList");
+  } else {
+    console.log("wishList Items Limit reached ");
+  }
+}
+
+// checkWishListLimit(wishListItems);
+// checkWishListLimit(30);
+// checkWishListLimit(88);
+
+//8. Check Discount
+
+const purchaseAmount = 1000;
+
+function checkDiscount(purchaseAmount) {
+  if (purchaseAmount > 1 && purchaseAmount < 1000) {
+    console.log("NO Discount ");
+  } else if (purchaseAmount >= 1000 && purchaseAmount <= 10000) {
+    console.log("15% discount applied");
+  } else {
+    console.log("25% discount applied");
+  }
+}
+
+// checkDiscount(purchaseAmount);
+// checkDiscount(600)
+// checkDiscount(150000)
+
+// 9. Devlivary Type
+
+const cityName = "Hyderabad";
+// const arr = ["hyderabad", "chennai", "Bangluru"];
+
+function checkDevliveryType(cityName) {
+  if (cityName === "Hyderabad") {
+    console.log("express");
+  } else {
+    console.log("Normal devlivery avaibale");
+  }
+}
+checkDevliveryType(cityName);
+checkDevliveryType("Nandyal");
+
+// 10.Login Check
+
+const userName = "Madhava";
+const password = "123456";
+
+function checkLoginStatus(userName, password) {
+  if (userName === "Madhava" && password === "123456") {
+    console.log("Login SuccessFull");
+  } else {
+    console.log("Login Failed");
+  }
+}
+
+checkLoginStatus(userName, password);
+checkLoginStatus("madhavareddy", "monkeyDLuffy")
