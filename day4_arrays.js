@@ -138,7 +138,7 @@ function oddSumElements() {
 
 // 10. Difference between max(largest element) and min(smallest element)
 
-const differenceArr = [5, 1, 6, 7, 9, ];
+const differenceArr = [5, 1, 6, 7, 9,-1];
 
 function differenceMaxMin(arr2) {
   if (differenceArr.length === 0) {
@@ -152,11 +152,14 @@ function differenceMaxMin(arr2) {
     } else if (differenceArr[i] > highestEle) {
       highestEle = differenceArr[i];
     }
+    if (smallestEle < 0) {
+      smallestEle = -smallestEle;
+    }
   }
   console.log(smallestEle);
   console.log(highestEle);
 
-  return highestEle -(smallestEle);
+  return highestEle - smallestEle;
 }
 
 console.log(differenceMaxMin());
