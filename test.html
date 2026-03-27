@@ -1,0 +1,19 @@
+<!doctype html>
+<head> </head>
+<body>
+  <script>
+    const elementArr = [10, 20, 3, 40, 50];
+
+    function findSumOfElements() {
+      let sum = elementArr[0];
+      for (i = 1; i < elementArr.length; i++) {
+        sum += elementArr[i];
+      }
+      console.log(sum);
+
+      return sum;
+    }
+
+    console.log(findSumOfElements());
+  </script>
+</body>
